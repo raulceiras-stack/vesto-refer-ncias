@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vesto co. | Referências de conteúdo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --green-deep:#0a2a1c;
+  --green:#103a28;
+  --green-soft:#17483274;
+  --gold:#c8a557;
+  --gold-soft:#e2cc92;
+  --ivory:#f4eee0;
+  --muted:#b9c4b6;
+  --serif:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--green-deep)}
+*,*::before,*::after{box-sizing:inherit}
+body{
+  margin:0;min-height:100%;
+  background:
+    radial-gradient(1100px 520px at 50% -8%, #1d5a3e55, transparent 70%),
+    var(--green-deep);
+  color:var(--ivory);
+  font-family:var(--sans);font-weight:300;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+
+/* Hero */
+.hero{padding:clamp(72px,14vh,140px) 0 clamp(48px,9vh,88px);text-align:center}
+.mark{
+  font-family:var(--serif);font-weight:500;color:var(--gold);
+  font-size:clamp(3.6rem,13vw,7.6rem);line-height:1;letter-spacing:.06em;margin:0;
+  display:inline-flex;align-items:baseline;gap:.18em;
+  animation:rise 1.2s cubic-bezier(.2,.7,.2,1) both;
+}
+.mark small{font-size:.2em;letter-spacing:.08em;font-weight:500}
+.rule{width:64px;height:1px;background:var(--gold);margin:clamp(28px,5vh,44px) auto;opacity:.7}
+.hero h1{
+  font-family:var(--serif);font-weight:400;font-style:italic;
+  font-size:clamp(1.5rem,4vw,2.3rem);line-height:1.25;margin:0 auto;max-width:22ch;color:var(--ivory);
+}
+.hero p{max-width:46ch;margin:20px auto 0;color:var(--muted);font-size:1.02rem}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Pastas */
+.section-title{
+  font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,3.4vw,2.2rem);
+  margin:0 0 8px;color:var(--ivory);
+}
+.section-sub{color:var(--muted);margin:0 0 36px;max-width:56ch}
+.grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;
+  list-style:none;margin:0;padding:0;
+}
+.card{
+  display:flex;flex-direction:column;justify-content:space-between;gap:28px;
+  min-height:168px;padding:26px 26px 22px;text-decoration:none;color:inherit;
+  background:linear-gradient(160deg,#14452f 0%,#0e3322 100%);
+  border:1px solid #c8a5572e;border-radius:3px;
+  transition:border-color .25s ease,transform .25s ease,background .25s ease;
+}
+.card:hover{border-color:var(--gold);transform:translateY(-3px);background:linear-gradient(160deg,#18503a 0%,#103a28 100%)}
+.card:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px}
+.name{
+  font-family:var(--serif);font-weight:500;font-size:clamp(1.55rem,2.6vw,1.95rem);
+  line-height:1.15;margin:0;color:var(--ivory);
+}
+.name em{
+  display:block;margin-top:8px;font-style:italic;font-weight:400;
+  font-size:.62em;color:var(--gold-soft);letter-spacing:.01em;
+}
+.open{
+  display:flex;align-items:center;gap:12px;color:var(--gold);
+  font-size:.92rem;font-weight:400;letter-spacing:.04em;
+}
+.open::after{content:"";flex:1;height:1px;background:#c8a55744;transition:background .25s}
+.card:hover .open::after{background:var(--gold)}
+
+/* Rodapé */
+footer{margin-top:clamp(64px,10vh,110px);padding:44px 0 56px;border-top:1px solid #c8a55730;text-align:center}
+footer .mark{font-size:1.9rem;animation:none}
+footer p{margin:12px 0 0;color:var(--muted);font-size:.9rem}
+
+@media (max-width:720px){
+  .grid{grid-template-columns:1fr}
+  .card{min-height:140px;padding:22px 20px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .mark{animation:none}
+  .card{transition:none}
+  .card:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h2 class="mark" aria-label="Vesto co.">VESTO<small>co.</small></h2>
+    <div class="rule"></div>
+    <h1>Referências de conteúdo para atacadistas</h1>
+    <p>Moda feminina em diferentes formatos: dia a dia, bastidores e movimento. Escolha uma pasta e abra para ver os exemplos.</p>
+  </header>
+
+  <main>
+    <h2 class="section-title">As pastas de referência</h2>
+    <p class="section-sub">Cada pasta abre direto no Google Drive, em uma nova aba.</p>
+
+    <ul class="grid">
+      <li><a class="card" href="https://drive.google.com/drive/folders/1hP-8Sb0IRF1AxaiZ-2my6JAovMgs6rxT?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Apresentação de peça <em>(gerar valor/desejo)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/13asGzxLhSS2rWO-vlXUKRvVIeJkQli6S?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Apresentando site</h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1gyDZ-w4wRfUJMOEyBLbBeH9VahF11rNI?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Bastidores</h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1g2sfcHu0hikP-mgKqNVRUL7J-xz7H29L?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Box/Loja Física</h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/13hrhH6HLT0SlgTRxh2XeuW1n0sPQgWXS?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Conteúdos</h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1zBGvV5-evvZmheT6CslW0s8M0mMZniy5?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Direcionamentos</h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1Yc7ucmY6vYEkvqx_kKzqR-2vIYIC1XJj?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Envio de Pedidos <em>(movimento)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/12dYNGEIxs0xL6BFq5I-s-kiUkDcr6lFv?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Feedback <em>(prova social)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/13to7GakiPRn5ntmsygjZcG-fTkwB54-r?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Interações <em>(movimento)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1Kj-5T3D8y-JKiVi2kYJbC3J2sR6xjijC?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Separação ou Pedido Confirmado <em>(movimento)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1VO7IJYVN5Iz04171TU1ZKrdGbNo0euKX?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Separação Pedidos <em>(ECOMMERCE)</em></h3><span class="open">Abrir pasta</span></a></li>
+
+      <li><a class="card" href="https://drive.google.com/drive/folders/1SFu4IbVcAvoOiBvgBS1XHrBe4nXfwIE7?usp=drive_link" target="_blank" rel="noopener">
+        <h3 class="name">Virais</h3><span class="open">Abrir pasta</span></a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="mark" aria-label="Vesto co.">VESTO<small>co.</small></div>
+    <p>Referências de conteúdo para atacadistas</p>
+  </footer>
+</div>
+</body>
+</html>
